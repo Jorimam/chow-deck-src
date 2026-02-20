@@ -1,0 +1,573 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="relative">
+  
+    
+
+  <nav class="border border-b-gray-200 flex justify-between fixed">
+    <div class="container p-4 flex items-center gap-5">
+        <div class="logo">
+            <img src="../images/logo.jpeg" class="w-12 h-12 rounded-md"  alt="Chowdeck Logo">
+        </div>
+        <div class="flex flex-row items-center gap-1">
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 text-green-500">
+            <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
+            </svg>
+
+
+            <p class="text-[12px]">Lagos</p>         
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-3 ">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+
+
+        </div>
+    </div>
+    <div class="container p-4 flex justify-end items-center gap-5">
+        <div class="relative">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 absolute left-2 top-2 ">
+            <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z" clip-rule="evenodd" />
+            </svg>
+
+
+            <input type="text" placeholder="Search Chowdeck..." class="bg-gray-200 p-2 text-xs w-80 rounded-md pl-8">
+        </div>
+        <div class="bg-green-900 w-10 h-10 flex items-center justify-center rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+            </svg>
+
+        </div>
+
+        <div class="bg-green-900 w-10 h-10 flex items-center justify-center rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+            </svg>
+
+        </div>
+    </div>
+    
+  </nav>
+  <div class="flex justify-between items-center p-10 mx-30">
+    <div class="text-3xl">
+        <h3>Explore Categories</h3>
+    </div>
+    <div class="bg-green-900 p-2 px-4 rounded-full flex">
+        <p class="text-white">Filter</p>
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+        </svg>
+
+    </div>
+  </div>
+
+  <div class="flex gap-7 mx-40 ">
+    <div class="bg-pink-100 rounded-md p-5 flex flex-col justify-center items-center px-6 py-5">
+        
+        <img src="../images/home.webp">
+        <p class="text-black text-xs pt-2">Restaurants</p>
+
+
+    </div>
+
+    <div class="bg-amber-200 rounded-md p-5 flex flex-col justify-center items-center px-9 py-5">
+        
+        <img src="../images/shops.webp">
+        <p class="text-black text-xs pt-2">Shops</p>
+
+
+    </div>
+
+    <div class="bg-sky-100 rounded-md p-5 flex flex-col justify-center items-center px-8 py-5">
+        
+        <img src="../images/pharmacy.svg">
+        <p class="text-black text-xs pt-2">Pharmacy</p>
+
+
+    </div>
+
+    <div class="bg-sky-100 rounded-md p-5 flex flex-col justify-center items-center px-6 py-5">
+        
+        <img src="../images/markets.webp" class="w-10 h-10">
+        <p class="text-black text-xs pt-2">Local Markets</p>
+
+
+    </div>
+
+    <div class="bg-pink-100 rounded-md p-5 flex flex-col justify-center items-center px-6 py-5">
+        
+        <img src="../images/meals.webp">
+        <p class="text-black text-xs pt-2">African Meals</p>
+
+
+    </div>
+
+    <div class="bg-sky-100 rounded-md p-5 flex flex-col justify-center items-center px-10 py-5">
+        
+        <img src="../images/health.svg" class="w-10 h-10">
+        <p class="text-black text-xs pt-2">Healthy</p>
+
+
+    </div>
+
+    <div class="bg-amber-200 rounded-md p-5 flex flex-col justify-center items-center px-9 py-5">
+        
+        <img src="./images/drinks.webp" class="w-10 h-10">
+        <p class="text-black text-xs pt-2">Drinks</p>
+
+
+    </div>
+  </div>
+
+  <div class="flex gap-7 mx-40 my-10">
+    <div class="">
+        <img src="../images/val.jpeg" class="rounded-3xl h-56">
+    </div>
+    <div class="">
+        <img src="../images/relay.jpeg" class="rounded-3xl h-56 w-full">
+    </div>
+  </div>
+
+  <div>
+    <ul class="text-gray-400 flex gap-14 mx-40">
+      <li class="text-green-600"><a href="#">All shops</a></li>
+      <li><a href="#">Supermarkets</a></li>
+      <li><a href="#">ICECREAM</a></li>
+      <li><a href="#">Drinks</a></li>
+      <li><a href="#">Mini Marts</a></li>
+      <li><a href="#">Electronics</a></li>
+      <li><a href="#">Skincare</a></li>
+      <li><a href="#">Fresh Food</a></li>
+    </ul>
+  </div>
+
+  <div class="mx-40 my-10 text-2xl flex items-center">
+    <p>Handpicked for you</p>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-green-500">
+        <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+        </svg>
+
+  </div>
+
+  <div class="mx-40 flex my-10 gap-12">
+    <div class="">
+        <div class=" relative text-white h-32 w-72 rounded-lg bg-cover bg-center bg-no-repeat flex items-center justify-center" style="background-image: url('../images/download.jpeg');" >
+            
+            OPENS TODAY AT 9:00AM
+        </div>
+
+        
+        <div class="flex justify-between py-2">
+            <p>Blenco Alimosho </p>
+            <p class="flex items-center">4.41
+                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="text-green-400"
+                fill="currentColor" viewBox="0 0 24 24" >
+                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                <path d="m6.87 14.33-1.83 6.4c-.12.4.03.84.37 1.08.34.25.8.26 1.14.02L12 18.2l5.45 3.63a.99.99 0 0 0 1.14-.02c.34-.25.49-.68.37-1.08l-1.83-6.4 4.54-4.08c.3-.27.41-.69.28-1.06-.13-.38-.47-.64-.87-.68l-5.7-.45-2.47-5.46a.998.998 0 0 0-1.82 0L8.62 8.06l-5.7.45c-.4.03-.74.3-.87.68s-.02.8.28 1.06z"></path>
+                </svg>
+
+            </p>
+            
+        </div>
+        <div class="flex items-center gap-1">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="text-green-400"
+                    fill="currentColor" viewBox="0 0 24 24" >
+                    <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                    <path d="M12 2C6.58 2 2 6.58 2 12s4.58 10 10 10 10-4.58 10-10S17.42 2 12 2m0 18c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8-3.66 8-8 8"></path><path d="M13 7h-2v6h6v-2h-4z"></path>
+                    </svg>
+                    <p>45 - 55mins</p>
+        </div>
+        <div class="flex gap-4 pt-2 text-green-400">
+            <p>Groceries</p>
+            <p>Guiness</p>
+            <p>Explore</p>
+        </div>
+    </div>
+
+    <div class="">
+        <div class=" relative text-white h-32 w-72 rounded-lg bg-cover bg-center bg-no-repeat flex items-center justify-center" style="background-image: url('../images/download\ \(1\).jpeg');" >
+            
+            OPENS TODAY AT 9:00AM
+        </div>
+
+        
+        <div class="flex justify-between py-2">
+            <p>Blenco Alimosho </p>
+            <p class="flex items-center">4.41
+                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="text-green-400"
+                fill="currentColor" viewBox="0 0 24 24" >
+                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                <path d="m6.87 14.33-1.83 6.4c-.12.4.03.84.37 1.08.34.25.8.26 1.14.02L12 18.2l5.45 3.63a.99.99 0 0 0 1.14-.02c.34-.25.49-.68.37-1.08l-1.83-6.4 4.54-4.08c.3-.27.41-.69.28-1.06-.13-.38-.47-.64-.87-.68l-5.7-.45-2.47-5.46a.998.998 0 0 0-1.82 0L8.62 8.06l-5.7.45c-.4.03-.74.3-.87.68s-.02.8.28 1.06z"></path>
+                </svg>
+
+            </p>
+            
+        </div>
+        <div class="flex items-center gap-1">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="text-green-400"
+                    fill="currentColor" viewBox="0 0 24 24" >
+                    <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                    <path d="M12 2C6.58 2 2 6.58 2 12s4.58 10 10 10 10-4.58 10-10S17.42 2 12 2m0 18c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8-3.66 8-8 8"></path><path d="M13 7h-2v6h6v-2h-4z"></path>
+                    </svg>
+                    <p>45 - 55mins</p>
+        </div>
+        <div class="flex gap-4 pt-2 text-green-400">
+            <p>Groceries</p>
+            <p>Guiness</p>
+            <p>Explore</p>
+        </div>
+    </div>
+
+    
+    <div class="">
+        <div class=" relative text-white h-32 w-72 rounded-lg bg-cover bg-center bg-no-repeat flex items-center justify-center" style="background-image: url('../images/download\ \(2\).jpeg');" >
+            
+            OPENS TODAY AT 9:00AM
+        </div>
+
+        
+        <div class="flex justify-between py-2">
+            <p>Blenco Alimosho </p>
+            <p class="flex items-center">4.41
+                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="text-green-400"
+                fill="currentColor" viewBox="0 0 24 24" >
+                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                <path d="m6.87 14.33-1.83 6.4c-.12.4.03.84.37 1.08.34.25.8.26 1.14.02L12 18.2l5.45 3.63a.99.99 0 0 0 1.14-.02c.34-.25.49-.68.37-1.08l-1.83-6.4 4.54-4.08c.3-.27.41-.69.28-1.06-.13-.38-.47-.64-.87-.68l-5.7-.45-2.47-5.46a.998.998 0 0 0-1.82 0L8.62 8.06l-5.7.45c-.4.03-.74.3-.87.68s-.02.8.28 1.06z"></path>
+                </svg>
+
+            </p>
+            
+        </div>
+        <div class="flex items-center gap-1">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="text-green-400"
+                    fill="currentColor" viewBox="0 0 24 24" >
+                    <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                    <path d="M12 2C6.58 2 2 6.58 2 12s4.58 10 10 10 10-4.58 10-10S17.42 2 12 2m0 18c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8-3.66 8-8 8"></path><path d="M13 7h-2v6h6v-2h-4z"></path>
+                    </svg>
+                    <p>45 - 55mins</p>
+        </div>
+        <div class="flex gap-4 pt-2 text-green-400">
+            <p>Groceries</p>
+            <p>Guiness</p>
+            <p>Explore</p>
+        </div>
+    </div>
+
+
+
+  </div>
+
+
+  <div class="mx-40 my-10 text-2xl flex items-center">
+    <p>Featured </p>
+
+    <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  class="text-green-400"
+        fill="currentColor" viewBox="0 0 24 24" >
+        <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+        <path d="M21.98 10.49c-.07-.38-.35-.69-.72-.79l-3.32-.9.9-3.38c.1-.38-.03-.78-.33-1.03s-.72-.3-1.07-.13l-3.09 1.47-1.44-3.15a1.005 1.005 0 0 0-1.82 0L9.65 5.73 6.56 4.26a1 1 0 0 0-1.07.13c-.3.25-.43.65-.33 1.03l.9 3.38-3.32.9a.99.99 0 0 0-.72.79c-.07.38.09.77.41.99l2.83 2-1.98 2.87c-.22.32-.24.74-.04 1.07s.56.53.95.49l3.41-.31.29 3.48c.03.39.29.72.66.86.37.13.78.04 1.05-.24l2.41-2.46 2.41 2.46c.19.19.45.3.71.3a1.01 1.01 0 0 0 1-.92l.29-3.48 3.41.31c.38.03.76-.16.95-.49.2-.34.18-.75-.04-1.07l-1.98-2.87 2.83-2c.32-.22.47-.61.41-.99Z"></path>
+        </svg>
+
+  </div>
+
+  <div class="mx-40 flex my-10 gap-12">
+    <div class="">
+        <div class=" relative text-white h-32 w-72 rounded-lg bg-cover bg-center bg-no-repeat flex items-center justify-center" style="background-image: url('./images/download\ \(4\).jpeg');" >
+            
+            OPENS TODAY AT 8:00AM
+        </div>
+
+        
+        <div class="flex justify-between py-2">
+            <p>Blenco Alimosho </p>
+            <p class="flex items-center">4.41
+                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="text-green-400"
+                fill="currentColor" viewBox="0 0 24 24" >
+                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                <path d="m6.87 14.33-1.83 6.4c-.12.4.03.84.37 1.08.34.25.8.26 1.14.02L12 18.2l5.45 3.63a.99.99 0 0 0 1.14-.02c.34-.25.49-.68.37-1.08l-1.83-6.4 4.54-4.08c.3-.27.41-.69.28-1.06-.13-.38-.47-.64-.87-.68l-5.7-.45-2.47-5.46a.998.998 0 0 0-1.82 0L8.62 8.06l-5.7.45c-.4.03-.74.3-.87.68s-.02.8.28 1.06z"></path>
+                </svg>
+
+            </p>
+            
+        </div>
+        <div class="flex items-center gap-1">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="text-green-400"
+                    fill="currentColor" viewBox="0 0 24 24" >
+                    <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                    <path d="M12 2C6.58 2 2 6.58 2 12s4.58 10 10 10 10-4.58 10-10S17.42 2 12 2m0 18c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8-3.66 8-8 8"></path><path d="M13 7h-2v6h6v-2h-4z"></path>
+                    </svg>
+                    <p>10 -20mins</p>
+        </div>
+        <div class="flex gap-4 pt-2 text-green-400">
+            <p>Groceries</p>
+            <p>Guiness</p>
+            <p>Explore</p>
+        </div>
+    </div>
+
+    <div class="">
+        <div class=" relative text-white h-32 w-72 rounded-lg bg-cover bg-center bg-no-repeat flex items-center justify-center" style="background-image: url('./images/gril.jpeg');" >
+            
+            OPENS TODAY AT 9:00AM
+        </div>
+
+        
+        <div class="flex justify-between py-2">
+            <p>Blenco Alimosho </p>
+            <p class="flex items-center">4.41
+                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="text-green-400"
+                fill="currentColor" viewBox="0 0 24 24" >
+                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                <path d="m6.87 14.33-1.83 6.4c-.12.4.03.84.37 1.08.34.25.8.26 1.14.02L12 18.2l5.45 3.63a.99.99 0 0 0 1.14-.02c.34-.25.49-.68.37-1.08l-1.83-6.4 4.54-4.08c.3-.27.41-.69.28-1.06-.13-.38-.47-.64-.87-.68l-5.7-.45-2.47-5.46a.998.998 0 0 0-1.82 0L8.62 8.06l-5.7.45c-.4.03-.74.3-.87.68s-.02.8.28 1.06z"></path>
+                </svg>
+
+            </p>
+            
+        </div>
+        <div class="flex items-center gap-1">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="text-green-400"
+                    fill="currentColor" viewBox="0 0 24 24" >
+                    <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                    <path d="M12 2C6.58 2 2 6.58 2 12s4.58 10 10 10 10-4.58 10-10S17.42 2 12 2m0 18c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8-3.66 8-8 8"></path><path d="M13 7h-2v6h6v-2h-4z"></path>
+                    </svg>
+                    <p>45 - 55mins</p>
+        </div>
+        <div class="flex gap-4 pt-2 text-green-400">
+            <p>Groceries</p>
+            <p>Guiness</p>
+            <p>Explore</p>
+        </div>
+    </div>
+
+    
+    <div class="">
+        <div class=" relative text-white h-32 w-72 rounded-lg bg-cover bg-center bg-no-repeat flex items-center justify-center" style="background-image: url('./images/burger.jpeg');" >
+            
+            OPENS TODAY AT 9:00AM
+        </div>
+
+        
+        <div class="flex justify-between py-2">
+            <p>Blenco Alimosho </p>
+            <p class="flex items-center">4.41
+                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="text-green-400"
+                fill="currentColor" viewBox="0 0 24 24" >
+                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                <path d="m6.87 14.33-1.83 6.4c-.12.4.03.84.37 1.08.34.25.8.26 1.14.02L12 18.2l5.45 3.63a.99.99 0 0 0 1.14-.02c.34-.25.49-.68.37-1.08l-1.83-6.4 4.54-4.08c.3-.27.41-.69.28-1.06-.13-.38-.47-.64-.87-.68l-5.7-.45-2.47-5.46a.998.998 0 0 0-1.82 0L8.62 8.06l-5.7.45c-.4.03-.74.3-.87.68s-.02.8.28 1.06z"></path>
+                </svg>
+
+            </p>
+            
+        </div>
+        <div class="flex items-center gap-1">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="text-green-400"
+                    fill="currentColor" viewBox="0 0 24 24" >
+                    <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                    <path d="M12 2C6.58 2 2 6.58 2 12s4.58 10 10 10 10-4.58 10-10S17.42 2 12 2m0 18c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8-3.66 8-8 8"></path><path d="M13 7h-2v6h6v-2h-4z"></path>
+                    </svg>
+                    <p>45 - 55mins</p>
+        </div>
+        <div class="flex gap-4 pt-2 text-green-400">
+            <p>Groceries</p>
+            <p>Guiness</p>
+            <p>Explore</p>
+        </div>
+    </div>
+
+    
+    
+
+  </div>
+
+
+  <div class="mx-40 my-10 text-2xl flex items-center">
+    <p>All Restaurants</p>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-green-500">
+        <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+        </svg>
+
+  </div>
+
+  <div class="mx-40 flex my-10 gap-12">
+    <div class="">
+        <div class=" relative text-white h-32 w-72 rounded-lg bg-cover bg-center bg-no-repeat flex items-center justify-center" style="background-image: url('./images/download.jpeg');" >
+            
+            OPENS TODAY AT 9:00AM
+        </div>
+
+        
+        <div class="flex justify-between py-2">
+            <p>Blenco Alimosho </p>
+            <p class="flex items-center">4.41
+                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="text-green-400"
+                fill="currentColor" viewBox="0 0 24 24" >
+                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                <path d="m6.87 14.33-1.83 6.4c-.12.4.03.84.37 1.08.34.25.8.26 1.14.02L12 18.2l5.45 3.63a.99.99 0 0 0 1.14-.02c.34-.25.49-.68.37-1.08l-1.83-6.4 4.54-4.08c.3-.27.41-.69.28-1.06-.13-.38-.47-.64-.87-.68l-5.7-.45-2.47-5.46a.998.998 0 0 0-1.82 0L8.62 8.06l-5.7.45c-.4.03-.74.3-.87.68s-.02.8.28 1.06z"></path>
+                </svg>
+
+            </p>
+            
+        </div>
+        <div class="flex items-center gap-1">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="text-green-400"
+                    fill="currentColor" viewBox="0 0 24 24" >
+                    <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                    <path d="M12 2C6.58 2 2 6.58 2 12s4.58 10 10 10 10-4.58 10-10S17.42 2 12 2m0 18c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8-3.66 8-8 8"></path><path d="M13 7h-2v6h6v-2h-4z"></path>
+                    </svg>
+                    <p>45 - 55mins</p>
+        </div>
+        <div class="flex gap-4 pt-2 text-green-400">
+            <p>Groceries</p>
+            <p>Guiness</p>
+            <p>Explore</p>
+        </div>
+    </div>
+
+    <div class="">
+        <div class=" relative text-white h-32 w-72 rounded-lg bg-cover bg-center bg-no-repeat flex items-center justify-center" style="background-image: url('./images/download\ \(1\).jpeg');" >
+            
+            OPENS TODAY AT 9:00AM
+        </div>
+
+        
+        <div class="flex justify-between py-2">
+            <p>Blenco Alimosho </p>
+            <p class="flex items-center">4.41
+                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="text-green-400"
+                fill="currentColor" viewBox="0 0 24 24" >
+                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                <path d="m6.87 14.33-1.83 6.4c-.12.4.03.84.37 1.08.34.25.8.26 1.14.02L12 18.2l5.45 3.63a.99.99 0 0 0 1.14-.02c.34-.25.49-.68.37-1.08l-1.83-6.4 4.54-4.08c.3-.27.41-.69.28-1.06-.13-.38-.47-.64-.87-.68l-5.7-.45-2.47-5.46a.998.998 0 0 0-1.82 0L8.62 8.06l-5.7.45c-.4.03-.74.3-.87.68s-.02.8.28 1.06z"></path>
+                </svg>
+
+            </p>
+            
+        </div>
+        <div class="flex items-center gap-1">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="text-green-400"
+                    fill="currentColor" viewBox="0 0 24 24" >
+                    <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                    <path d="M12 2C6.58 2 2 6.58 2 12s4.58 10 10 10 10-4.58 10-10S17.42 2 12 2m0 18c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8-3.66 8-8 8"></path><path d="M13 7h-2v6h6v-2h-4z"></path>
+                    </svg>
+                    <p>45 - 55mins</p>
+        </div>
+        <div class="flex gap-4 pt-2 text-green-400">
+            <p>Groceries</p>
+            <p>Guiness</p>
+            <p>Explore</p>
+        </div>
+    </div>
+
+    
+    <div class="">
+        <div class=" relative text-white h-32 w-72 rounded-lg bg-cover bg-center bg-no-repeat flex items-center justify-center" style="background-image: url('./images/download\ \(2\).jpeg');" >
+            
+            OPENS TODAY AT 9:00AM
+        </div>
+
+        
+        <div class="flex justify-between py-2">
+            <p>Blenco Alimosho </p>
+            <p class="flex items-center">4.41
+                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="text-green-400"
+                fill="currentColor" viewBox="0 0 24 24" >
+                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                <path d="m6.87 14.33-1.83 6.4c-.12.4.03.84.37 1.08.34.25.8.26 1.14.02L12 18.2l5.45 3.63a.99.99 0 0 0 1.14-.02c.34-.25.49-.68.37-1.08l-1.83-6.4 4.54-4.08c.3-.27.41-.69.28-1.06-.13-.38-.47-.64-.87-.68l-5.7-.45-2.47-5.46a.998.998 0 0 0-1.82 0L8.62 8.06l-5.7.45c-.4.03-.74.3-.87.68s-.02.8.28 1.06z"></path>
+                </svg>
+
+            </p>
+            
+        </div>
+        <div class="flex items-center gap-1">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="text-green-400"
+                    fill="currentColor" viewBox="0 0 24 24" >
+                    <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                    <path d="M12 2C6.58 2 2 6.58 2 12s4.58 10 10 10 10-4.58 10-10S17.42 2 12 2m0 18c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8-3.66 8-8 8"></path><path d="M13 7h-2v6h6v-2h-4z"></path>
+                    </svg>
+                    <p>45 - 55mins</p>
+        </div>
+        <div class="flex gap-4 pt-2 text-green-400">
+            <p>Groceries</p>
+            <p>Guiness</p>
+            <p>Explore</p>
+        </div>
+    </div>
+
+
+
+  </div>
+
+  
+
+  <footer class="border border-t-gray-200 mx-40  text-gray-400 flex gap-10">
+    <div class="">
+        <img src="./images/chow.webp" alt="Logo">
+    </div>
+    <div class="flex flex-col gap-5">
+        <h3 class="text-black">LOCATIONS</h3>
+        <ul class="flex flex-col gap-3 ">
+            <li><a href="#" class="hover:underline">Community 25</a></li>
+            <li><a href="#" class="hover:underline">NYSC Camp Iseyin</a></li>
+            <li><a href="#" class="hover:underline">Enugu NYSC Camp</a></li>
+            <li><a href="#" class="hover:underline">Benin NYSC Camp</a></li>
+            <li><a href="#" class="hover:underline">Port Harcourt NYSC Camp</a></li>
+        </ul>
+        <a href="#" class="hover:underline text-green-500">see more</a>
+    </div>
+    <div class="flex flex-col gap-5">
+        <h3 class="text-black">DOWNLOAD</h3>
+        <ul>
+            <li><a href="#">Google Play Store</a></li>
+            <li><a href="#">iOS App Store</a></li>
+           
+        </ul>
+    </div>
+    <div class="flex flex-col gap-5">
+        <h3 class="text-black">GET HELP</h3>
+        <ul>
+            <li><a href="#">Email</a></li>
+          
+        </ul>
+    </div>
+    <div class="flex flex-col gap-5">
+        <h3 class="text-black">LEGAL</h3>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>   
+    </div>
+  </footer>
+  <div class="flex justify-between p-3 text-gray-400" >
+    <div class="mx-40">&copy; 2022, Chowdeck.</div>
+    <div class="flex gap-5 mx-40">
+        
+        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
+            fill="currentColor" viewBox="0 0 24 24" >
+            <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+            <path d="M12 2.06c-5.5 0-10 4.5-10 10 0 4.94 3.61 9.06 8.33 9.89l.06-.05h-.06v-7.06h-2.5v-2.78h2.5V9.84c0-2.5 1.61-3.89 3.89-3.89.72 0 1.5.11 2.22.22v2.56h-1.28c-1.22 0-1.5.61-1.5 1.39v1.94h2.67l-.44 2.78h-2.22v7.06h-.06l.06.05c4.72-.83 8.33-4.94 8.33-9.89 0-5.5-4.5-10-10-10"></path>
+            </svg>
+
+        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
+        fill="currentColor" viewBox="0 0 24 24" >
+        <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+        <path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248m0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008m4.807-8.875a1.078 1.078 0 1 0 0 2.156 1.078 1.078 0 1 0 0-2.156"></path><path d="M20.533 6.111A4.6 4.6 0 0 0 17.9 3.479a6.6 6.6 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.6 6.6 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.6 6.6 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71s0 2.753.056 3.71c.015.748.156 1.486.419 2.187a4.6 4.6 0 0 0 2.634 2.632 6.6 6.6 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.6 6.6 0 0 0 2.186-.419 4.6 4.6 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.6 6.6 0 0 0-.421-2.217m-1.218 9.532a5 5 0 0 1-.311 1.688 3 3 0 0 1-1.712 1.711 5 5 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a5 5 0 0 1-1.669-.311 3 3 0 0 1-1.719-1.711 5.1 5.1 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654s0-2.686.053-3.655a5 5 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5 5 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a5 5 0 0 1 1.67.311 3 3 0 0 1 1.712 1.712 5.1 5.1 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655s0 2.698-.043 3.654z"></path>
+        </svg>
+
+        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
+        fill="currentColor" viewBox="0 0 24 24" >
+        <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+        <path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.04 4.04 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.03 4.03 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.02 4.02 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.46 11.46 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a8 8 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8 8 0 0 0 2.319-.624 8.7 8.7 0 0 1-2.019 2.083"></path>
+        </svg>
+    </div>
+  </div>
+</body>
+</html>
